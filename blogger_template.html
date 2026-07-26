@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsversion='3' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><data:blog.pageTitle/></title>
+    <b:skin><![CDATA[
+        /* Mandatory Blogger Skin */
+        #header, .header-outer, #sidebar-wrapper, .navbar { display: none !important; }
+        body { margin: 0; padding: 0; }
+    ]]></b:skin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+/*<![CDATA[*/
+        :root {
+            --neon-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.2);
+            --text-glow: 0 0 10px rgba(0, 255, 255, 0.6);
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; scroll-behavior: smooth; }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .glow-cyan { box-shadow: var(--neon-shadow); }
+        .text-glow-cyan { text-shadow: var(--text-glow); }
+        .bg-glass { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px); }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(0, 255, 255, 0.6); }
+        }
+        .animate-glow { animation: pulse-glow 3s infinite ease-in-out; }
+        
+        .skill-bar { height: 4px; background: #18181b; border-radius: 999px; overflow: hidden; }
+        .skill-progress { height: 100%; background: #00FFFF; box-shadow: 0 0 10px #00FFFF; transition: width 1s ease-out; }
+/*]]>*/
+    </style>
+</head>
+<body class="selection:bg-cyan-500/30">
+    <b:section id='main' showaddelement='false'>
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'>
+            <b:includable id='main'>
+                <!-- Navigation -->
+                <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-8">
+                    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full border border-cyan-500/50 flex items-center justify-center">
+                                <span class="text-cyan-400 font-display font-bold text-sm">NK</span>
+                            </div>
+                            <span class="font-display font-medium tracking-tighter text-lg uppercase hidden sm:block">
+                                Nasim <span class="text-cyan-400">Kamali</span>
+                            </span>
+                        </div>
+                        
+                        <div class="flex gap-8 text-[10px] font-display uppercase tracking-widest font-bold">
+                            <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                            <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+                            <a href="#work" class="hover:text-cyan-400 transition-colors">Work</a>
+                            <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Hero Section -->
+                <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+                    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="inline-block px-3 py-1 mb-6 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-[10px] uppercase tracking-widest font-bold">
+                                Available for design &amp; engineering
+                            </div>
+                            <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
+                                Hi, It's <span class="text-cyan-400 text-glow-cyan">Nasim</span>
+                            </h1>
+                            <p class="font-display text-xl md:text-2xl text-zinc-400 mb-8 max-w-lg leading-relaxed">
+                                M.Sc. Engineering Geologist &amp; <br /> B.Sc. Civil Engineer based in London.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-4 mb-12">
+                                <a href="#contact" class="px-8 py-3 bg-cyan-500 text-black font-display font-bold uppercase tracking-widest text-xs rounded-full hover:bg-cyan-400 transition-all glow-cyan">
+                                    Hire Me
+                                </a>
+                                <a href="#work" class="px-8 py-3 border border-zinc-800 text-white font-display font-bold uppercase tracking-widest text-xs rounded-full hover:bg-zinc-900 transition-all text-center">
+                                    My Work
+                                </a>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <a href="https://www.linkedin.com/in/nasimkamali" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-cyan-400 transition-colors" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="https://www.instagram.com/developerssquad" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-cyan-400 transition-colors" title="Business Instagram"><i data-lucide="instagram"></i></a>
+                                <a href="https://www.facebook.com/share/1CCSfPUhfR/" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-cyan-400 transition-colors" title="Business Facebook"><i data-lucide="facebook"></i></a>
+                                <a href="https://youtube.com/@developerssquad532" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-cyan-400 transition-colors" title="YouTube Channel"><i data-lucide="youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="relative flex justify-center">
+                            <div class="relative w-72 h-72 md:w-96 md:h-96 animate-glow rounded-full">
+                                <div class="absolute inset-0 rounded-full overflow-hidden border-4 border-cyan-500 p-2 shadow-[0_0_50px_rgba(0,255,255,0.3)]">
+                                    <img src="/src/assets/images/regenerated_image_1777847865289.jpg" alt="Nasim" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-1/2 left-1/4 -translate-y-1/2 -z-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+                </section>
+
+                <!-- Services -->
+                <section id="services" class="py-24 px-6 bg-zinc-950/50">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="mb-16">
+                            <span class="text-cyan-400 text-xs font-display font-bold uppercase tracking-[0.2em] mb-4 block">What I Do</span>
+                            <h2 class="text-4xl font-display font-bold uppercase tracking-tight">Services &amp; Expertise</h2>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-cyan-500/50 transition-all">
+                                <i data-lucide="pen-tool" class="text-cyan-400 mb-6 font-bold"></i>
+                                <h3 class="text-lg font-display font-bold mb-4 uppercase">UI/UX Design</h3>
+                                <p class="text-zinc-500 text-xs">Crafting beautiful digital experiences with Illustrator &amp; Photoshop.</p>
+                            </div>
+                            <div class="p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-cyan-500/50 transition-all">
+                                <i data-lucide="code-2" class="text-cyan-400 mb-6 font-bold"></i>
+                                <h3 class="text-lg font-display font-bold mb-4 uppercase">Web Development</h3>
+                                <p class="text-zinc-500 text-xs">Modern web architecture using React, PHP, and MySQL.</p>
+                            </div>
+                            <div class="p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-cyan-500/50 transition-all">
+                                <i data-lucide="briefcase" class="text-cyan-400 mb-6 font-bold"></i>
+                                <h3 class="text-lg font-display font-bold mb-4 uppercase">Civil Engineering</h3>
+                                <p class="text-zinc-500 text-xs">Structural analysis and design with AutoCAD &amp; ArchiCAD.</p>
+                            </div>
+                            <div class="p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-cyan-500/50 transition-all">
+                                <i data-lucide="line-chart" class="text-cyan-400 mb-6 font-bold"></i>
+                                <h3 class="text-lg font-display font-bold mb-4 uppercase">Data Analysis</h3>
+                                <p class="text-zinc-500 text-xs">Scientific research and visualization using Python &amp; GIS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="py-24 px-6">
+                    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+                        <div>
+                            <h2 class="text-4xl font-display font-bold uppercase mb-12 tracking-tight">Skills Proficiency</h2>
+                            <div class="space-y-8">
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold uppercase mb-2"><span>Web Development</span><span>81%</span></div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 81%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold uppercase mb-2"><span>Photoshop</span><span>95%</span></div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold uppercase mb-2"><span>Illustrator</span><span>70%</span></div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold uppercase mb-2"><span>MS Excel/Word</span><span>91%</span></div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 91%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold uppercase mb-2"><span>AutoCAD</span><span>86%</span></div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 86%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800" id="education">
+                            <h3 class="text-2xl font-display font-bold mb-6 flex items-center gap-3 uppercase tracking-tighter">
+                                <i data-lucide="graduation-cap" class="text-cyan-400"></i> Education
+                            </h3>
+                            <div class="space-y-8 border-l border-cyan-500/20 pl-6 ml-1">
+                                <div>
+                                    <span class="text-[10px] text-cyan-500 font-bold uppercase tracking-widest block mb-1">2021 - 2022</span>
+                                    <h4 class="text-lg font-display font-bold uppercase leading-tight mb-1">M.Sc. in Engineering Geology</h4>
+                                    <p class="text-zinc-500 text-xs font-medium tracking-wider">University of Portsmouth, UK</p>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-cyan-500 font-bold uppercase tracking-widest block mb-1">2017 - 2020</span>
+                                    <h4 class="text-lg font-display font-bold uppercase leading-tight mb-1">B.Sc. in Civil Engineering</h4>
+                                    <p class="text-zinc-500 text-xs font-medium tracking-wider">Leading University, Sylhet, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Work -->
+                <section id="work" class="py-24 px-6 bg-zinc-950">
+                    <div class="max-w-7xl mx-auto">
+                        <h2 class="text-4xl font-display font-bold uppercase mb-16 tracking-tight">Portfolio</h2>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="relative h-96 rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 group">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+                                <img src="https://picsum.photos/seed/portsmouth/800/1200" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" />
+                                <div class="absolute bottom-0 p-8 z-20">
+                                    <span class="text-cyan-400 text-[9px] font-bold uppercase tracking-widest">Collier's Knap, UK</span>
+                                    <h3 class="text-2xl font-display font-bold uppercase mt-4">Ground Model Design</h3>
+                                </div>
+                            </div>
+                            <div class="relative h-96 rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 group">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+                                <img src="https://picsum.photos/seed/wight/800/1200" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" />
+                                <div class="absolute bottom-0 p-8 z-20">
+                                    <span class="text-cyan-400 text-[9px] font-bold uppercase tracking-widest">Isle of Wight, UK</span>
+                                    <h3 class="text-2xl font-display font-bold uppercase mt-4">Stratigraphy Mapping</h3>
+                                </div>
+                            </div>
+                            <div class="relative h-96 rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 group">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+                                <img src="https://picsum.photos/seed/france/800/1200" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" />
+                                <div class="absolute bottom-0 p-8 z-20">
+                                    <span class="text-cyan-400 text-[9px] font-bold uppercase tracking-widest">Castellane, France</span>
+                                    <h3 class="text-2xl font-display font-bold uppercase mt-4">Rock Tunnel Assessment</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer id="contact" class="py-20 px-6 border-t border-zinc-900">
+                    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 mb-20">
+                        <div>
+                            <h2 class="text-7xl font-display font-bold uppercase tracking-tighter mb-8 leading-none">Let's <span class="text-cyan-400">Connect</span></h2>
+                            <div class="space-y-6 text-zinc-400 text-sm font-medium">
+                                <p class="flex items-center gap-4"><i data-lucide="mail" class="text-cyan-400"></i> nasimkamali532@gmail.com</p>
+                                <p class="text-[10px] text-zinc-600 italic mt-4 px-3 py-1 border border-zinc-900 bg-zinc-950/50 rounded-lg inline-block">Contact via Email for WhatsApp inquiries</p>
+                                <p class="flex items-center gap-4"><i data-lucide="map-pin" class="text-cyan-400"></i> London, United Kingdom</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] font-bold uppercase tracking-widest mb-6 text-zinc-500 font-display">Social Media</h4>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://www.linkedin.com/in/nasimkamali" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-xl hover:bg-cyan-500 hover:text-black transition-all"><i data-lucide="linkedin"></i></a>
+                                <a href="https://youtube.com/@developerssquad532" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-xl hover:bg-red-600 transition-all"><i data-lucide="youtube"></i></a>
+                                <a href="https://www.instagram.com/developerssquad" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-xl hover:bg-cyan-400 hover:text-black transition-all"><i data-lucide="instagram"></i></a>
+                                <a href="https://www.facebook.com/share/1CCSfPUhfR/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-xl hover:bg-blue-600 transition-all"><i data-lucide="facebook"></i></a>
+                            </div>
+                            <div class="mt-12">
+                                 <a href="https://www.instagram.com/developerssquad" target="_blank" rel="noopener noreferrer" class="font-display font-bold text-2xl uppercase tracking-tighter hover:text-cyan-400 transition-colors">Developers' Squad</a>
+                                 <p class="text-xs text-zinc-600 uppercase tracking-widest font-bold">Design &amp; Engineering Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <script>
+            /*<![CDATA[*/
+                    lucide.createIcons();
+                    window.onscroll = function() {
+                        var navbar = document.getElementById("navbar");
+                        if (window.scrollY > 50) {
+                            navbar.classList.add("bg-black/80", "backdrop-blur-md", "py-4");
+                            navbar.classList.remove("py-8");
+                        } else {
+                            navbar.classList.remove("bg-black/80", "backdrop-blur-md", "py-4");
+                            navbar.classList.add("py-8");
+                        }
+                    };
+            /*]]>*/
+                </script>
+            </b:includable>
+        </b:widget>
+    </b:section>
+</body>
+</html>
